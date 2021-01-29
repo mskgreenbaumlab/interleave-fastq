@@ -17,13 +17,13 @@ def interleave(f1, f2):
         if not line:
             # EOF - not just and empty read
             break
-        print(line.strip())
+        print(line, end="")
         
         for i in range(3):
-            print(f1.readline().strip())
+            print(f1.readline(), end="")
         
         for i in range(4):
-            print(f2.readline().strip())
+            print(f2.readline(), end="")
 
 if __name__ == '__main__':
     try:
