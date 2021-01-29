@@ -14,7 +14,8 @@ def interleave(f1, f2):
     """
     while True:
         line = f1.readline()
-        if line.strip() == "":
+        if not line:
+            # EOF - not just and empty read
             break
         print(line.strip())
         
